@@ -1,0 +1,21 @@
+{
+  "name": "lan-chat-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private LAN-only chat application with end-to-end encryption",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "local": "node server.js",
+    "build": "echo 'No build step required - this is a Node.js server application'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2"
+  },
+  "keywords": ["lan", "chat", "encryption", "websocket"],
+  "author": "",
+  "license": "MIT"
+}
