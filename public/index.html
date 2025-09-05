@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Connection Panel -->
+        <div id="connection-panel" class="panel">
+            <div class="header">
+                <h1>/\/|Nexus|\/\</h1>
+                <p>Secure, private messaging on your local network</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="nickname">Nickname</label>
+                <input type="text" id="nickname" placeholder="Enter your nickname" maxlength="20">
+            </div>
+            
+            <div class="form-group">
+                <label for="passphrase">Shared Passphrase</label>
+                <input type="password" id="passphrase" placeholder="Enter shared passphrase">
+                <small>All users must use the same passphrase to decrypt messages</small>
+            </div>
+            
+            <button id="connect-btn" class="primary-btn">
+                <span class="btn-text">Review Terms & Connect</span>
+                <div class="loading-spinner"></div>
+            </button>
+        </div>
+
+        <!-- Terms of Service Modal -->
+        <div id="tos-modal" class="modal hidden">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>🔗 Nexus - Terms of Service</h2>
+                </div>
+                <div class="modal-body">
+                    <div id="tos-content" class="tos-content">
+                        <!-- TOS content will be inserted here -->
+                        <p>Nexus – Terms of Service (TOS)
+                        Effective Date: 9/4/2025
+                        ________________________________________
+                        1. Acceptance of Terms
+                        By accessing or using Nexus (“the App”), you agree to comply with and be bound by these Terms of Service (“Terms”). If you do not agree to these Terms, you must not use the App. These Terms apply to all users, including individuals, organizations, and any entities accessing the service.
+                        ________________________________________
+                        2. Use of the App
+                        •	Nexus is intended for private, LAN-based communication.
+                        •	Users agree to use the App responsibly, in a manner that does not infringe upon the rights of others or violate applicable laws.
+                        •	Users are solely responsible for all messages, content, and communications transmitted through the App.
+                        ________________________________________
+                        3. Privacy and Security
+                        •	Nexus is designed to minimize data retention. Messages are encrypted in transit and are not stored on the server by default.
+                        •	While the App uses encryption to enhance privacy, no system is completely secure, and the developers cannot guarantee absolute confidentiality or protection from unauthorized access.
+                        •	Users are responsible for safeguarding their own devices and credentials.
+                        ________________________________________
+                        4. Account and Access
+                        •	Nexus does not require traditional accounts; users identify themselves via nicknames or passphrases.
+                        •	Users must not impersonate others or attempt to gain unauthorized access to private communications.
+                        ________________________________________
+                        5. Restrictions
+                        Users may not:
+                        •	Use the App to transmit content that is unlawful, harmful, threatening, abusive, harassing, defamatory, obscene, or otherwise objectionable.
+                        •	Reverse-engineer, decompile, or attempt to modify the App or underlying code.
+                        •	Disrupt, interfere with, or attempt to compromise the security of the App or connected devices.
+                        ________________________________________
+                        6. Intellectual Property
+                        •	All code, design, graphics, logos, text, and other content of Nexus remain the exclusive property of the developers unless otherwise stated.
+                        •	Users may not copy, redistribute, or create derivative works without express permission.
+                        •	Users may reference the App for personal, non-commercial purposes under fair use, provided they do not violate copyright or misrepresent Nexus as their own work.
+                        ________________________________________
+                        7. Limitation of Liability
+                        •	Nexus is provided “as-is” without warranties of any kind.
+                        •	The developers are not responsible for any direct, indirect, incidental, or consequential damages, including but not limited to data loss, system downtime, or misuse by third parties.
+                        •	Users assume all responsibility for the consequences of their own actions while using the App.
+                        ________________________________________
+                        8. Updates and Modifications
+                        •	The developers reserve the right to modify the App or these Terms at any time.
+                        •	Continued use of Nexus after modifications constitutes acceptance of the updated Terms.
+                        ________________________________________
+                        9. Governing Law
+                        •	These Terms shall be governed by and interpreted under the laws of United States of America.
+                        •	Any disputes arising from these Terms or use of the App will be resolved in the applicable courts of the United States of America
+                        ________________________________________
+                        10. Contact
+                        For questions, concerns, or reporting misuse, please contact: 29wikb@tesdk12.net
+                        ________________________________________
+                        11. Use at School or Other Networks
+                        •	Use at School: Using Nexus on school or institutional networks may carry additional risks. Network administrators may monitor traffic, detect unusual connections, or block ports.
+                        •	No Guarantees of Privacy: Messages may be exposed to network monitoring systems outside the control of Nexus.
+                        •	User Responsibility: Users are solely responsible for complying with school policies, network rules, and applicable laws.
+                        •	Limitation of Liability: Nexus is not liable for any consequences resulting from use at school, including:
+                        o	Suspension or expulsion
+                        o	Loss of network or device privileges
+                        o	Disciplinary action from administrators
+                        o	Confiscation of devices
+                        o	Legal consequences from misuse
+                        •	Gray Area Usage: Users assume all risks in situations where use is not explicitly prohibited.
+                        ________________________________________
+                        12. Copyright and Intellectual Property
+                        •	Ownership: All code, designs, graphics, logos, text, and other content within Nexus are the exclusive property of the developers unless otherwise stated.
+                        •	Copyright Notice: © 2025 Nexus. All rights reserved.
+                        •	Restrictions: Users may not:
+                        o	Copy, reproduce, or distribute the App for commercial purposes without permission.
+                        o	Create derivative works for redistribution without permission.
+                        o	Use the App’s branding, logos, or name for personal gain without consent.
+                        •	Fair Use: Users may reference the App for personal, non-commercial purposes (e.g., screenshots, educational demonstrations) as long as copyright and representation rules are followed.
+                        ________________________________________
+                        13. Developer Identity and Nickname Restrictions
+                        •	The developer of Nexus is publicly known as Bw5.
+                        •	Use of the nickname “Bw5” within the App, for impersonation, or to misrepresent yourself is strictly prohibited.
+                        •	Violating this rule may result in permanent IP bans and termination of access.
+                        ________________________________________
+                        14. Screenshot and Recording Policy
+                        •	Users are strictly prohibited from taking screenshots, screen recordings, or creating any public record of the App.
+                        •	This includes capturing messages, recording video/audio, or sharing via email or social media.
+                        •	Violations may result in:
+                        o	Permanent IP bans
+                        o	Immediate termination of access
+                        o	Additional legal action if applicable
+                        •	Users are responsible for ensuring all devices comply with this policy.
+                        ________________________________________
+                        15. Illegal Activity and Law Enforcement
+                        •	Nexus may not be used to commit illegal acts under any jurisdiction.
+                        •	If the App is used for illegal activity, relevant logs, metadata, or information may be disclosed to the appropriate authorities.
+                        •	Users engaging in illegal activity assume full responsibility for legal consequences.
+                        •	Nexus and its developers are not liable for fines, criminal charges, or other legal actions resulting from misuse.
+
+</p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button id="decline-tos" class="secondary-btn">Decline</button>
+                    <button id="agree-tos" class="primary-btn">I Agree</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chat Panel -->
+        <div id="chat-panel" class="panel hidden">
+            <div class="chat-header">
+                <div class="user-info">
+                    <span class="status-indicator connected"></span>
+                    <span id="current-nickname">Anonymous</span>
+                </div>
+                <button id="disconnect-btn" class="secondary-btn">Disconnect</button>
+            </div>
+            
+            <div id="messages" class="messages-container">
+                <div class="welcome-message">
+                    <p>🔒 End-to-end encrypted chat</p>
+                    <p>Messages are never stored on the server</p>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <input type="text" id="message-input" placeholder="Type a message..." maxlength="500">
+                <button id="send-btn" class="send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                        <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Status Bar -->
+        <div id="status-bar" class="status-bar">
+            <span id="status-text">Not connected</span>
+        </div>
+    </div>
+
+    <script src="crypto-utils.js"></script>
+    <script src="chat-app.js"></script>
+</body>
+</html>
